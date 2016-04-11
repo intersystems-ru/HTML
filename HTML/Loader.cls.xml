@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Export generator="Cache" version="25">
+<Class name="HTML.Loader">
+<Description>
+The main entry point
+User supplies source and gets HTML.Document
+Parce satus is in HTML.Document:Errors property</Description>
+<Super>%RegisteredObject</Super>
+<TimeCreated>64019,77587.444118</TimeCreated>
+
+<Method name="LoadFile">
+<ClassMethod>1</ClassMethod>
+<FormalSpec>FileName:%String</FormalSpec>
+<ReturnType>HTML.Document</ReturnType>
+<Implementation><![CDATA[	/// Probably call LoadStream
+]]></Implementation>
+</Method>
+
+<Method name="LoadString">
+<ClassMethod>1</ClassMethod>
+<FormalSpec>String:%String</FormalSpec>
+<ReturnType>HTML.Document</ReturnType>
+<Implementation><![CDATA[	/// Convert it into Stream and parce?
+]]></Implementation>
+</Method>
+
+<Method name="LoadStream">
+<ClassMethod>1</ClassMethod>
+<FormalSpec>Stream:%Stream.Object</FormalSpec>
+<ReturnType>HTML.Document</ReturnType>
+<Implementation><![CDATA[	return ##class(HTML.Parser).ParseStream(Stream)
+]]></Implementation>
+</Method>
+
+<Method name="LoadURL">
+<ClassMethod>1</ClassMethod>
+<FormalSpec>String:%String</FormalSpec>
+<ReturnType>HTML.Document</ReturnType>
+<Implementation><![CDATA[	/// Load URL and call LoadStream
+]]></Implementation>
+</Method>
+
+<Method name="LoadHTTPRequest">
+<ClassMethod>1</ClassMethod>
+<FormalSpec>HTTPRequest:%Net.HttpRequest,Method:%String="GET"</FormalSpec>
+<ReturnType>HTML.Document</ReturnType>
+<Implementation><![CDATA[	/// Load URL with supplied HTTPRequest and call LoadStream
+]]></Implementation>
+</Method>
+</Class>
+</Export>

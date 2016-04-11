@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Export generator="Cache" version="25">
+<Class name="HTML.Node">
+<Description>
+HTML Node
+http://www.w3schools.com/jsref/prop_node_nodetype.asp
+</Description>
+<IncludeCode>HTML.Include</IncludeCode>
+<Super>%RegisteredObject</Super>
+<TimeCreated>64019,59352.198719</TimeCreated>
+
+<Property name="HasAttributes">
+<Description>
+Support property to improve parsing</Description>
+<Type>%Boolean</Type>
+</Property>
+
+<Property name="Attributes">
+<Description>
+List with all attributes of this node</Description>
+<Type>HTML.Attribute</Type>
+<Collection>list</Collection>
+</Property>
+
+<Property name="ChildNodes">
+<Description>
+List of all nodes inside this node</Description>
+<Type>HTML.Node</Type>
+<Collection>list</Collection>
+</Property>
+
+<Property name="ParentNode">
+<Description>
+Parent node for this node</Description>
+<Type>HTML.Node</Type>
+</Property>
+
+<Property name="Closed">
+<Description>
+Is this node closed or not</Description>
+<Type>%Boolean</Type>
+</Property>
+
+<Property name="HasClosingAttributes">
+<Description>
+Support property to improve parsing</Description>
+<Type>%Boolean</Type>
+</Property>
+
+<Property name="ClosingAttributes">
+<Description>
+List with all closing attributes of this node</Description>
+<Type>HTML.Attribute</Type>
+<Collection>list</Collection>
+</Property>
+
+<Property name="HasChildNodes">
+<Description>
+Support property to improve parsing</Description>
+<Type>%Boolean</Type>
+</Property>
+
+<Property name="InnerHtml">
+<Description>
+Maybe skip it to increase speed
+TODO: Is it a stream or a string?</Description>
+<Type>%String</Type>
+</Property>
+
+<Property name="InnerText">
+<Description>
+TODO: Is it a stream or a string?</Description>
+<Type>%String</Type>
+</Property>
+
+<Property name="Id">
+<Type>%String</Type>
+</Property>
+
+<Property name="Name">
+<Description>
+Lowercase OriginalName</Description>
+<Type>%String</Type>
+</Property>
+
+<Property name="OriginalName">
+<Description>
+Node name as it is</Description>
+<Type>%String</Type>
+</Property>
+
+<Property name="Type">
+<Description>
+http://www.w3schools.com/jsref/prop_node_nodetype.asp
+Maybe create a separate datatype for it </Description>
+<Type>%String</Type>
+<Parameter name="VALUELIST"/>
+</Property>
+
+<Property name="StreamPosition">
+<Description>
+Position of this node from the beginning of the stream</Description>
+<Type>%Integer</Type>
+</Property>
+
+<Property name="XPath">
+<Description>
+XPath string that points to this node</Description>
+<Type>%String</Type>
+</Property>
+
+<Method name="XPathGet">
+<Implementation><![CDATA[	return ..ParentNode.XPath + ..BuildXPath()
+]]></Implementation>
+</Method>
+
+<Method name="BuildXPath">
+<ReturnType>%String</ReturnType>
+<Implementation><![CDATA[	THROW $$$NIE
+]]></Implementation>
+</Method>
+
+<Method name="FirstChild">
+<Description>
+Must refer to the SAME in-memory object as ChildNodes.GetAt(1)
+maybe a wrapper around it</Description>
+<ReturnType>HTML.Node</ReturnType>
+</Method>
+
+<Method name="LastChild">
+<Description>
+Must refer to the SAME in-memory object as ChildNodes.GetAt(ChildNodes.Count())</Description>
+<ReturnType>HTML.Node</ReturnType>
+</Method>
+
+<Method name="NextSibling">
+<Description>
+Must refer to the SAME in-memory object as ParentNode.ChildNodes.GetAt(this+1)</Description>
+<ReturnType>HTML.Node</ReturnType>
+</Method>
+
+<Method name="PreviousSibling">
+<Description>
+Must refer to the SAME in-memory object as ParentNode.ChildNodes.GetAt(this-1)</Description>
+<ReturnType>HTML.Node</ReturnType>
+</Method>
+
+<Method name="GetAttributeValue">
+<Description>
+Return this node attribute value</Description>
+<FormalSpec>Name:%String,Default:%String=""</FormalSpec>
+<ReturnType>%String</ReturnType>
+</Method>
+
+<Method name="SelectNodes">
+<Description>
+Return a list of nodes that satisfy XPath query
+TODO: Maybe return a special HTML.ListOfNodes ?</Description>
+<FormalSpec>XPath:%String</FormalSpec>
+<ReturnType>%ListOfObjects</ReturnType>
+</Method>
+
+<Method name="SelectSingleNode">
+<Description>
+Return first node that satisfies XPath query
+TODO: Maybe return a special HTML.ListOfNodes ?</Description>
+<FormalSpec>XPath:%String</FormalSpec>
+<ReturnType>HTML.Node</ReturnType>
+</Method>
+</Class>
+</Export>

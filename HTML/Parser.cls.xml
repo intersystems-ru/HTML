@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Export generator="Cache" version="25">
+<Class name="HTML.Parser">
+<Description>
+Main parsing class
+Maybe parsing logic itself needs to be inside Document/Node classes
+But it's an entry point for Loader</Description>
+<Abstract>1</Abstract>
+<TimeCreated>64019,77440.266577</TimeCreated>
+
+<Method name="ParseStream">
+<ClassMethod>1</ClassMethod>
+<FormalSpec>Stream:%Stream.Object</FormalSpec>
+<ReturnType>HTML.Document</ReturnType>
+</Method>
+
+<Method name="ParceString">
+<ClassMethod>1</ClassMethod>
+<FormalSpec>String:%String</FormalSpec>
+<ReturnType>HTML.Document</ReturnType>
+<Implementation><![CDATA[	/// Convert it into Stream and parce?
+]]></Implementation>
+</Method>
+</Class>
+</Export>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Export generator="Cache" version="25">
+<Class name="HTML.Document">
+<Super>%RegisteredObject</Super>
+<TimeCreated>64019,67800.977072</TimeCreated>
+
+<Property name="Encoding">
+<Description><![CDATA[
+Can get it from  meta <http-equiv="content-type" content="text/html;charset"> Node
+or from input data
+TODO: maybe separate declared and real encoding
+TODO: Fill ValueList]]></Description>
+<Type>%String</Type>
+<Parameter name="VALUELIST" value=",UTF8"/>
+</Property>
+
+<Property name="DocumentNode">
+<Type>HTML.Node</Type>
+</Property>
+
+<Property name="Error">
+<Description><![CDATA[
+TODO The goal is:
+1. Handle exceptions, like there must be no exceptions thrown at user level
+Addendum: 	Except $$$NULL references returned by SelectNodes() and similar methods. 
+			It is user job to check if we return Node, ListOfNodes or a $$$NULL
+2. Handle parse errors. Skip&continue as most times the html would not be a valid html]]></Description>
+<Type>%Status</Type>
+</Property>
+</Class>
+</Export>

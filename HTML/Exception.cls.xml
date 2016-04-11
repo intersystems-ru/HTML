@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Export generator="Cache" version="25">
+<Class name="HTML.Exception">
+<Super>%Exception.General</Super>
+<TimeCreated>64019,54458.912599</TimeCreated>
+
+<Parameter name="NOTIMPLEMENTEDNAME">
+<Default><![CDATA[<NOT IMPLEMENTED>]]></Default>
+</Parameter>
+
+<Parameter name="NOTIMPLEMENTEDCODE">
+<Default>900</Default>
+</Parameter>
+</Class>
+</Export>

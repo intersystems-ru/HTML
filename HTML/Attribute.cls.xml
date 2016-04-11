@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Export generator="Cache" version="25">
+<Class name="HTML.Attribute">
+<Description>
+One HTML Node attribute
+Simple explanation: http://www.w3schools.com/html/html_attributes.asp
+HTML language reference: https://www.w3.org/TR/html-markup/global-attributes.html
+TODO: There must never be two or more attributes on the same start tag whose names are a case-insensitive match for each other.
+TODO: Where do Global Attributes go? Here? To the node? Both places.</Description>
+<IncludeCode>HTML.Include</IncludeCode>
+<Super>%RegisteredObject</Super>
+<TimeCreated>64019,52170.011775</TimeCreated>
+
+<Property name="Name">
+<Description>
+Attribute lowercase name</Description>
+<Type>%String</Type>
+</Property>
+
+<Property name="OriginalName">
+<Description>
+Attribute name</Description>
+<Type>%String</Type>
+</Property>
+
+<Property name="Value">
+<Description>
+Attribute value
+Restriction upon attribute values: https://www.w3.org/TR/html-markup/syntax.html#syntax-attribute-value</Description>
+<Type>%String</Type>
+</Property>
+
+<Property name="Node">
+<Description>
+Node, in which this attribute exists</Description>
+<Type>HTML.Node</Type>
+</Property>
+
+<Property name="Document">
+<Description>
+Node, in which this attribute exists</Description>
+</Property>
+
+<Property name="QuoteType">
+<Description>
+Single or double quote</Description>
+<Parameter name="VALUELIST" value="&apos;,&quot;"/>
+</Property>
+
+<Property name="StreamPosition">
+<Description>
+Position of this attribute from the beginning of the stream</Description>
+<Type>%Integer</Type>
+</Property>
+
+<Property name="XPath">
+<Description>
+XPath returning this Attribute</Description>
+<Type>%String</Type>
+</Property>
+
+<Method name="XPathGet">
+<Implementation><![CDATA[	return ..Node.XPath + ..BuildXPath()
+]]></Implementation>
+</Method>
+
+<Method name="BuildXPath">
+<ReturnType>%String</ReturnType>
+<Implementation><![CDATA[	THROW $$$NIE
+]]></Implementation>
+</Method>
+</Class>
+</Export>

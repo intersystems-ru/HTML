@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Export generator="Cache" version="25">
+<Routine name="HTML.Include" type="INC"><![CDATA[
+#define NIE(%text) ##class(HTML.Exception).%New(##class(HTML.Exception).#NOTIMPLEMENTEDNAME, ##class(HTML.Exception).#NOTIMPLEMENTEDCODE, , %text)
+#define NIE ##class(HTML.Exception).%New(##class(HTML.Exception).#NOTIMPLEMENTEDNAME, ##class(HTML.Exception).#NOTIMPLEMENTEDCODE)
+]]></Routine>
+</Export>
