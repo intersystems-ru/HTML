@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Export generator="Cache" version="25">
 <Class name="HTML.Exception">
+<Description>
+Exception class</Description>
 <Super>%Exception.General</Super>
 <TimeCreated>64019,54458.912599</TimeCreated>
 

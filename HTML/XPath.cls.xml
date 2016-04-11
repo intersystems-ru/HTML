@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Export generator="Cache" version="25">
 <Class name="HTML.XPath">
+<Description>
+This class provides iteration logic</Description>
 <Super>%RegisteredObject</Super>
 <TimeCreated>64019,78818.419157</TimeCreated>
 
@@ -9,6 +11,8 @@
 </Property>
 
 <Property name="CurrentNode">
+<Description>
+We iterate over the nodes, this is the current one in the document</Description>
 <Type>HTML.Node</Type>
 </Property>
 
@@ -30,7 +34,9 @@
 <Method name="Select">
 <FormalSpec>XPath:%String</FormalSpec>
 <ReturnType>%ListOfObjects</ReturnType>
-<Implementation><![CDATA[	/// Or return an iterator and use it to traverse the node set
+<Implementation><![CDATA[
+	/// Or return an iterator and use it to traverse the node set
+	/// Or provide an inter
 ]]></Implementation>
 </Method>
 </Class>

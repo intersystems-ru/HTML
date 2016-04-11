@@ -9,6 +9,8 @@ But it's an entry point for Loader</Description>
 <TimeCreated>64019,77440.266577</TimeCreated>
 
 <Method name="ParseStream">
+<Description>
+Main parsing method</Description>
 <ClassMethod>1</ClassMethod>
 <FormalSpec>Stream:%Stream.Object</FormalSpec>
 <ReturnType>HTML.Document</ReturnType>
@@ -18,7 +20,7 @@ But it's an entry point for Loader</Description>
 <ClassMethod>1</ClassMethod>
 <FormalSpec>String:%String</FormalSpec>
 <ReturnType>HTML.Document</ReturnType>
-<Implementation><![CDATA[	/// Convert it into Stream and parce?
+<Implementation><![CDATA[	/// Convert it into Stream and parse?
 ]]></Implementation>
 </Method>
 </Class>

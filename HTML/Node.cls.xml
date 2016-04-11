@@ -74,6 +74,8 @@ TODO: Is it a stream or a string?</Description>
 </Property>
 
 <Property name="Id">
+<Description>
+Node Id attribute</Description>
 <Type>%String</Type>
 </Property>
 
@@ -91,6 +93,7 @@ Node name as it is</Description>
 
 <Property name="Type">
 <Description>
+Node Type
 http://www.w3schools.com/jsref/prop_node_nodetype.asp
 Maybe create a separate datatype for it </Description>
 <Type>%String</Type>
@@ -110,11 +113,15 @@ XPath string that points to this node</Description>
 </Property>
 
 <Method name="XPathGet">
+<Description>
+Getter for XPath property</Description>
 <Implementation><![CDATA[	return ..ParentNode.XPath + ..BuildXPath()
 ]]></Implementation>
 </Method>
 
 <Method name="BuildXPath">
+<Description>
+Build addition to XPath after our parent node</Description>
 <ReturnType>%String</ReturnType>
 <Implementation><![CDATA[	THROW $$$NIE
 ]]></Implementation>
