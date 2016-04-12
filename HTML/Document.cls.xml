@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Export generator="Cache" version="25">
 <Class name="HTML.Document">
+<Description>
+https://www.w3.org/TR/DOM-Level-2-Core/core.html#i-Document</Description>
 <Super>%RegisteredObject</Super>
 <TimeCreated>64019,67800.977072</TimeCreated>
 
