@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Export generator="Cache" version="25">
-<Class name="HTML.XPath">
+<Class name="HTML.Selector">
 <Description>
 This class uses iteration logic from HTML.Iterator
-and checks XPath condition</Description>
+and checks Select condition</Description>
 <Super>HTML.Iterator</Super>
-<TimeCreated>64019,78818.419157</TimeCreated>
+<TimeCreated>64022,58172.581106</TimeCreated>
 
 <Method name="SelectOne">
-<FormalSpec>XPath:%String</FormalSpec>
+<FormalSpec>Query:%String</FormalSpec>
 <ReturnType>HTML.Node</ReturnType>
 </Method>
 
 <Method name="Select">
-<FormalSpec>XPath:%String</FormalSpec>
+<FormalSpec>Query:%String</FormalSpec>
 <ReturnType>%ListOfObjects</ReturnType>
 <Implementation><![CDATA[	/// Or return an iterator and use it to traverse the node set
 ]]></Implementation>

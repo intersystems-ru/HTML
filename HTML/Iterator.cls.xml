@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Export generator="Cache" version="25">
+<Class name="HTML.Iterator">
+<Description>
+This class provides iteration logic</Description>
+<Super>%RegisteredObject</Super>
+<TimeCreated>64022,58118.25214</TimeCreated>
+
+<Property name="Document">
+<Type>HTML.Document</Type>
+</Property>
+
+<Property name="CurrentNode">
+<Description>
+We iterate over the nodes, this is the current one in the document</Description>
+<Type>HTML.Node</Type>
+</Property>
+
+<Method name="%OnNew">
+<FormalSpec>Document:HTML.Document,Node:HTML.Node</FormalSpec>
+<ReturnType>%Status</ReturnType>
+<Implementation><![CDATA[
+	Set ..Document = Document
+	Set:$IsObject(Node) ..CurrentNode = Node
+	Return $$$OK
+]]></Implementation>
+</Method>
+</Class>
+</Export>
