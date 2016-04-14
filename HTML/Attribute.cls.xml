@@ -13,7 +13,7 @@ TODO: Where do Global Attributes go? Here? To the node? Both places.</Descriptio
 
 <Property name="Name">
 <Description>
-Attribute lowercase name</Description>
+Attribute uppercase name</Description>
 <Type>%String</Type>
 </Property>
 

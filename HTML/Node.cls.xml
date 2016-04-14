@@ -79,9 +79,9 @@ Node Id attribute</Description>
 <Type>%String</Type>
 </Property>
 
-<Property name="Name">
+<Property name="TagName">
 <Description>
-Lowercase OriginalName</Description>
+Uppercase OriginalName</Description>
 <Type>%String</Type>
 </Property>
 
