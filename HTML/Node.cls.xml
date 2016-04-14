@@ -174,5 +174,21 @@ TODO: Maybe return a special HTML.ListOfNodes ?</Description>
 <FormalSpec>XPath:%String</FormalSpec>
 <ReturnType>HTML.Node</ReturnType>
 </Method>
+
+<Method name="CSSSelectNodes">
+<Description>
+Return a list of nodes that satisfy Select query
+TODO: Maybe return a special HTML.ListOfNodes ?</Description>
+<FormalSpec>Query:%String</FormalSpec>
+<ReturnType>%ListOfObjects</ReturnType>
+</Method>
+
+<Method name="CSSSelectSingleNode">
+<Description>
+Return first node that satisfies Select query
+TODO: Maybe return a special HTML.ListOfNodes ?</Description>
+<FormalSpec>Query:%String</FormalSpec>
+<ReturnType>HTML.Node</ReturnType>
+</Method>
 </Class>
 </Export>
