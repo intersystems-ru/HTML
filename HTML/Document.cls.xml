@@ -3,7 +3,7 @@
 <Class name="HTML.Document">
 <Description>
 https://www.w3.org/TR/DOM-Level-2-Core/core.html#i-Document</Description>
-<Super>%RegisteredObject</Super>
+<Super>HTML.Node</Super>
 <TimeCreated>64019,67800.977072</TimeCreated>
 
 <Property name="Encoding">
@@ -14,10 +14,6 @@ TODO: maybe separate declared and real encoding
 TODO: Fill ValueList]]></Description>
 <Type>%String</Type>
 <Parameter name="VALUELIST" value=",UTF8"/>
-</Property>
-
-<Property name="DocumentNode">
-<Type>HTML.Node</Type>
 </Property>
 
 <Property name="Error">
